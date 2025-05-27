@@ -59,6 +59,10 @@ class LoginUser(BaseModel):
 
 
 
+@app.get("/")
+def read_root():
+    return {"message": "Your FastAPI app is running!"}
+
 # Menu endpoints
 @app.get('/menu/', response_model=List[MenuItem])
 def get_menu():
