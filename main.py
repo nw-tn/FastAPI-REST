@@ -137,5 +137,5 @@ def login_user(user: LoginUser):
     }
   
 
-if __name__ == '__main__':
-  uvicorn.run('main:app', reload=True)
+# if __name__ == '__main__':
+#   uvicorn.run('main:app', reload=True)
